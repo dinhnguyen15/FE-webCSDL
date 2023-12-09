@@ -1,0 +1,952 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="ctl00_Head1">
+    <title>Lịch học</title>
+    <meta name="description" content="AnNguyenJsc" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Expires" content="1800" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../Css/ddsmoothmenu.css"
+    />
+    <script type="text/javascript" src="/admin/Css/ddsmoothmenu.js"></script>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1" />
+    <meta name="CODE_LANGUAGE" content="C#" />
+    <meta name="vs_defaultClientScript" content="JavaScript" />
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery-1.8.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery-ui-1.8.23.custom.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery.msgBox.js"
+    ></script>
+    <link href="/css/bdc-style.css" rel="stylesheet" type="text/css" />
+    <link href="/admin/Css/jquery.msg.css" rel="stylesheet" type="text/css" />
+    <link href="/admin/Css/msgBoxLight.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/admin/Css/jquery-ui-1.8.23.custom.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/admin/Css/gridviewStyles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="/menujs/JSCookMenu.js"></script>
+    <script type="text/javascript" src="/menujs/effect.js"></script>
+    <script type="text/javascript" src="/menujs/theme.js"></script>
+    <link type="text/css" rel="stylesheet" href="/menujs/default.css" />
+    <link type="text/css" rel="stylesheet" href="/menujs/theme.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <meta
+      name="vs_targetSchema"
+      content="http://schemas.microsoft.com/intellisense/ie5"
+    />
+  </head>
+  <body
+    class="pageBody"
+    marginheight="0"
+    marginwidth="0"
+    topmargin="0"
+    leftmargin="0"
+    onload="init()"
+  >
+    <form
+      name="aspnetForm"
+      method="post"
+      action="PrivatePage.aspx"
+      id="aspnetForm"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <input
+          type="hidden"
+          name="__VIEWSTATE"
+          id="__VIEWSTATE"
+          value="/wEPDwULLTE2NDMzNzMyNTdkZE24e+A71a/CioIioJgtG3tqYsN2"
+        />
+      </div>
+
+      <div></div>
+      <div>
+        <div
+          id="loading"
+          style="
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 300px;
+            display: none;
+          "
+        >
+          <img alt="" src="/loading.gif" border="0" />
+        </div>
+      </div>
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <style type="text/css">
+                .welcometext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                }
+                .usernametext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                  color: Blue;
+                }
+                .logouttext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                  color: Red;
+                  text-decoration: none;
+                }
+              </style>
+              <table
+                style="border-collapse: collapse"
+                cellspacing="0"
+                cellpadding="0"
+                width="100%"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <div id="myMenuID">
+                        <table
+                          summary="main menu"
+                          class="ThemeDefaultMenu"
+                          cellspacing="0"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID1',0,0)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID1',0,0)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID1',0,0)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID1',0,0)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Hệ thống</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,null,0,3)"
+                                onmousedown="cmItemMouseDown (this,1,null,0,3)"
+                                onmouseout="cmItemMouseOut (this,1,null,0,3)"
+                                onmouseup="cmItemMouseUp (this,1,null,0,3)"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID2',0,4)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID2',0,4)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID2',0,4)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID2',0,4)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Học viện mạng</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,null,0,7)"
+                                onmousedown="cmItemMouseDown (this,1,null,0,7)"
+                                onmouseout="cmItemMouseOut (this,1,null,0,7)"
+                                onmouseup="cmItemMouseUp (this,1,null,0,7)"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID3',0,8)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID3',0,8)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID3',0,8)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID3',0,8)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Nghiên cứu Phát triển</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID1"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID1Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,1)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,1)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,1)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,1)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Đổi mật khẩu
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,2)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,2)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,2)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,2)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Cập nhật thông tin cá nhân
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID2"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID2Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,5)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,5)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,5)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,5)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Trang cá nhân
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,6)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,6)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,6)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,6)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Xem học viên các lớp học
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID3"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID3Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,9)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,9)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,9)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,9)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Ý tưởng
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,10)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,10)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,10)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,10)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Dự án của thành viên
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <a
+                          href="javascript:void(0);"
+                          class="icon"
+                          onclick="myFunction()"
+                        >
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
+                    </td>
+                    <!-- <td
+                      width="20%"
+                      style="
+                        background-color: #f1f3f5;
+                        border-bottom: 1px solid #d5d5d5;
+                      "
+                      align="right"
+                      nowrap="nowrap"
+                    ></td> -->
+                  </tr>
+                </tbody>
+              </table>
+              <script
+                type="text/javascript"
+                language="JavaScript"
+                src="./menujs/main.js"
+              ></script>
+              <div class="info-welcome" style="margin: 3px; text-indent: 5px">
+                <img class="img-welcome" src="./img/anhtheDinhHuuNguyen.jpg" />
+                <font class="welcometext">Đinh Hữu Nguyện</font>
+                <span id="ctl00_m_menuLeft_lblUser" class="usernametext"
+                  >|</span
+                >
+
+                <a
+                  id="ctl00_m_menuLeft_HyperLink1"
+                  class="logouttext"
+                  href="form-login.html"
+                  >Thoát</a
+                >&nbsp;
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td valign="top">
+              <div
+                id="ctl00_m_validationSummary"
+                class="ValidatorSummary"
+                style="color: Red; display: none"
+                bis_skin_checked="1"
+              ></div>
+              <div class="schedules-main" style="width: 100%" bis_skin_checked="1">
+                <font class="titleForm">LỊCH HỌC</font>
+                <font face="Arial" size="2" color="red"
+                  ><b>
+                    <span id="ctl00_m_contentBody_lblInfor"
+                      >2023 - 2024 - 1 - 07</span
+                    ></b
+                  ></font
+                >
+                
+                    <font
+                      class="print-doc schedules-print"
+                      style="font-weight: bold; font-size: larger"
+                      colspan="8"
+                    >
+                      <a
+                        title="Ấn vào đây để in lịch học"
+                        href="javascript:self.print();"
+                        bis_skin_checked="1"
+                        >In Lịch học</a
+                      >
+                  </font>
+                  
+                <thread></thread>
+                <table
+                  id="admin_pages_admin_elearn_viewclassschedules_aspx"
+                  class="display nowrap"
+                  style="border-collapse: collapse; width: 100%"
+                  border="1"
+                >
+                  <tbody>
+                    
+                    <tr style="font-weight: bold; font-size: larger">
+                      <th style="font-weight: bold; font-size: larger">STT</th>
+                      <th style="font-weight: bold; font-size: larger">Ngày</th>
+                      <th style="font-weight: bold; font-size: larger">Kíp</th>
+                      <th style="font-weight: bold; font-size: larger">
+                        Phòng
+                      </th>
+                      <th style="font-weight: bold; font-size: larger">
+                        Hình thức
+                      </th>
+                      <th style="font-weight: bold; font-size: larger">
+                        Tham dự
+                      </th>
+                      <th style="font-weight: bold; font-size: larger">
+                        Đề cương
+                      </th>
+                      <th style="font-weight: bold; font-size: larger">
+                        Ghi chú
+                      </th>
+                    </tr>
+                  </tbody>
+                  <tbody>
+                    <tr>
+                      <td style="font-size: larger">2</td>
+                      <td style="font-size: larger">19/08/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">Hướng dẫn sử dụng</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">3</td>
+                      <td style="font-size: larger">19/08/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 14h50">
+                        Tiết 8
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger" title="27.68.139.231">
+                        10
+                      </td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">Thảo luận</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">4</td>
+                      <td style="font-size: larger">26/08/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">5</td>
+                      <td style="font-size: larger">26/08/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 14h50">
+                        Tiết 8
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">THIẾT KẾ CƠ SỞ DỮ LiỆU</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">6</td>
+                      <td style="font-size: larger">09/09/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">7</td>
+                      <td style="font-size: larger">09/09/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 14h50">
+                        Tiết 8
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">
+                        TIÊU CHÍ LỰA CHỌN HỆ QUẢN TRỊ CSDL
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">8</td>
+                      <td style="font-size: larger">16/09/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">9</td>
+                      <td style="font-size: larger">16/09/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 14h50">
+                        Tiết 8
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">KÝ HIỆU TRONG E-R</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">23/09/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">11</td>
+                      <td style="font-size: larger">23/09/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 14h50">
+                        Tiết 8
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">
+                        CHUYỂN HÓA QUAN HỆ NHIỀU NGÔI
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">12</td>
+                      <td style="font-size: larger">30/09/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">13</td>
+                      <td style="font-size: larger">30/09/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 14h50">
+                        Tiết 8
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">
+                        VÍ DỤ ÁNH XẠ QUAN HỆ HAI NGÔI M:N
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">14</td>
+                      <td style="font-size: larger">07/10/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">Online (Online)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger"></td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">15</td>
+                      <td style="font-size: larger">07/10/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 14h50">
+                        Tiết 8
+                      </td>
+                      <td style="font-size: larger">Online (Online)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger"></td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">BÀI TẬP 3</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">16</td>
+                      <td style="font-size: larger">14/10/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">17</td>
+                      <td style="font-size: larger">14/10/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 15h50">
+                        Kíp 4
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">
+                        VÍ DỤ 8: PHÉP CHỌN, CHIẾU VÀ PHÉP TRỪ
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">18</td>
+                      <td style="font-size: larger">21/10/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">19</td>
+                      <td style="font-size: larger">21/10/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 15h50">
+                        Kíp 4
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">
+                        VÍ DỤ 6: BIỂU THỨC PHỨC TẠP
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">20</td>
+                      <td style="font-size: larger">28/10/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">21</td>
+                      <td style="font-size: larger">28/10/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 15h50">
+                        Kíp 4
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">
+                        DƯ THỪA DỮ LIỆU VÀ LỖI CẬP NHẬT
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">22</td>
+                      <td style="font-size: larger">04/11/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">23</td>
+                      <td style="font-size: larger">04/11/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 15h50">
+                        Kíp 4
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">VÍ DỤ PHỦ KHÔNG DƯ THỪA</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">24</td>
+                      <td style="font-size: larger">11/11/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">25</td>
+                      <td style="font-size: larger">11/11/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 14h50">
+                        Tiết 8
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">26</td>
+                      <td style="font-size: larger">11/11/2023</td>
+                      <td style="font-size: larger" title="15h00 đến 15h50">
+                        Tiết 9
+                      </td>
+                      <td style="font-size: larger">101 (101 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">CÁC YÊU CẦU CHUẨN HÓA</td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">27</td>
+                      <td style="font-size: larger">18/11/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">28</td>
+                      <td style="font-size: larger">18/11/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 15h50">
+                        Kíp 4
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">
+                        Preserve (D , F, D-&gt;A): VÒNG
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">29</td>
+                      <td style="font-size: larger">25/11/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">30</td>
+                      <td style="font-size: larger">25/11/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 15h50">
+                        Kíp 4
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger">
+                        VÍ DỤ TÁCH DẠNG CHUẨN 3: 3NF.3
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">31</td>
+                      <td style="font-size: larger">02/12/2023</td>
+                      <td style="font-size: larger" title="13h00 đến 13h50">
+                        Tiết 7
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                    <tr>
+                      <td style="font-size: larger">32</td>
+                      <td style="font-size: larger">02/12/2023</td>
+                      <td style="font-size: larger" title="14h00 đến 15h50">
+                        Kíp 4
+                      </td>
+                      <td style="font-size: larger">601 (601 nhà A2)</td>
+                      <td style="font-size: larger">Trong đơn vị</td>
+                      <td style="font-size: larger">10</td>
+                      <td style="font-size: larger">Chưa nhập</td>
+                      <td style="font-size: larger"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table
+        class="footer"
+        width="100%"
+        height="13"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <tbody>
+          <tr valign="top">
+            <td bgcolor="#d8dfec" width="*" style="height: 13px">
+              <img
+                id="ctl00_Image2"
+                src="../../../images/bottom_left_corner.gif"
+                style="height: 13px; width: 16px; border-width: 0px"
+              />
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+          <tr valign="top">
+            <td style="height: 76px">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr valign="middle" class="footerText">
+                    <td style="height: 14px">
+                      Hệ thống <font color="red"> Quản lý đào tạo </font> phiên
+                      bản 1.0, 08/2016. <br />
+                      Địa chỉ: Bộ môn Hệ thống thông tin, khoa CNTT 1 Học viện
+                      Công nghệ Bưu chính Viễn thông<br />
+                      Email:
+                      <a
+                        href="mailto:anhczvn@gmail.com"
+                        class="footerText"
+                        title="email anhczvn@gmail.com"
+                        >anhczvn@gmail.com</a
+                      ><br />
+                      Điện thoại:
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <!-- <tr valign="top">
+            <td style="height: 25px">&nbsp;</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,975 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="ctl00_Head1">
+    <title>Trang cá nhân</title>
+    <meta name="description" content="AnNguyenJsc" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Expires" content="1800" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../Css/ddsmoothmenu.css"
+    />
+    <script type="text/javascript" src="/admin/Css/ddsmoothmenu.js"></script>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1" />
+    <meta name="CODE_LANGUAGE" content="C#" />
+    <meta name="vs_defaultClientScript" content="JavaScript" />
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery-1.8.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery-ui-1.8.23.custom.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery.msgBox.js"
+    ></script>
+    <link href="/css/bdc-style.css" rel="stylesheet" type="text/css" />
+    <link href="/admin/Css/jquery.msg.css" rel="stylesheet" type="text/css" />
+    <link href="/admin/Css/msgBoxLight.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/admin/Css/jquery-ui-1.8.23.custom.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/admin/Css/gridviewStyles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="/menujs/JSCookMenu.js"></script>
+    <script type="text/javascript" src="/menujs/effect.js"></script>
+    <script type="text/javascript" src="/menujs/theme.js"></script>
+    <link type="text/css" rel="stylesheet" href="/menujs/default.css" />
+    <link type="text/css" rel="stylesheet" href="/menujs/theme.css" />
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+      ddsmoothmenu.init({
+        mainmenuid: "smoothmenu1", //menu DIV id
+        orientation: "h", //Horizontal or vertical menu: Set to "h" or "v"
+        classname: "ddsmoothmenu", //class added to menu's outer DIV
+        //customtheme: ["#1c5a80", "#18374a"],
+        contentsource: "markup", //"markup" or ["container_id", "path_to_menu_file"]
+      });
+    </script>
+    <meta
+      name="vs_targetSchema"
+      content="http://schemas.microsoft.com/intellisense/ie5"
+    />
+  </head>
+  <body
+    class="pageBody"
+    marginheight="0"
+    marginwidth="0"
+    topmargin="0"
+    leftmargin="0"
+    onload="init()"
+  >
+    <form
+      name="aspnetForm"
+      method="post"
+      action="PrivatePage.aspx"
+      id="aspnetForm"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <input
+          type="hidden"
+          name="__VIEWSTATE"
+          id="__VIEWSTATE"
+          value="/wEPDwULLTE2NDMzNzMyNTdkZE24e+A71a/CioIioJgtG3tqYsN2"
+        />
+      </div>
+
+      <div>
+        <input
+          type="hidden"
+          name="__VIEWSTATEGENERATOR"
+          id="__VIEWSTATEGENERATOR"
+          value="B7DC95C2"
+        />
+        <input
+          type="hidden"
+          name="__EVENTVALIDATION"
+          id="__EVENTVALIDATION"
+          value="/wEWAgLS1OfJDALb5a2ZB72oUrQWYyCjHtvpJ3+hH2G1EZKO"
+        />
+      </div>
+      <div>
+        <div
+          id="loading"
+          style="
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 300px;
+            display: none;
+          "
+        >
+          <img alt="" src="/loading.gif" border="0" />
+        </div>
+      </div>
+      <script type="text/javascript">
+        var ld = document.all;
+        var ns4 = document.layers;
+        var ns6 = document.getElementById && !document.all;
+        var ie4 = document.all;
+        if (ns4) ld = document.loading;
+        else if (ns6) ld = document.getElementById("loading").style;
+        else if (ie4) ld = document.all.loading.style;
+        function init() {
+          if (ns4) {
+            ld.visibility = "hidden";
+          } else if (ns6 || ie4) ld.display = "none";
+        }
+      </script>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <style type="text/css">
+                .welcometext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                }
+                .usernametext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                  color: Blue;
+                }
+                .logouttext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                  color: Red;
+                  text-decoration: none;
+                }
+              </style>
+              <table
+                style="border-collapse: collapse"
+                cellspacing="0"
+                cellpadding="0"
+                width="100%"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <div id="myMenuID">
+                        <table
+                          summary="main menu"
+                          class="ThemeDefaultMenu"
+                          cellspacing="0"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID1',0,0)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID1',0,0)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID1',0,0)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID1',0,0)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Hệ thống</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,null,0,3)"
+                                onmousedown="cmItemMouseDown (this,1,null,0,3)"
+                                onmouseout="cmItemMouseOut (this,1,null,0,3)"
+                                onmouseup="cmItemMouseUp (this,1,null,0,3)"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID2',0,4)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID2',0,4)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID2',0,4)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID2',0,4)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Học viện mạng</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,null,0,7)"
+                                onmousedown="cmItemMouseDown (this,1,null,0,7)"
+                                onmouseout="cmItemMouseOut (this,1,null,0,7)"
+                                onmouseup="cmItemMouseUp (this,1,null,0,7)"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID3',0,8)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID3',0,8)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID3',0,8)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID3',0,8)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Nghiên cứu Phát triển</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID1"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID1Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,1)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,1)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,1)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,1)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Đổi mật khẩu
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,2)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,2)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,2)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,2)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Cập nhật thông tin cá nhân
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID2"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID2Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,5)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,5)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,5)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,5)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Trang cá nhân
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,6)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,6)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,6)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,6)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Xem học viên các lớp học
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID3"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID3Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,9)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,9)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,9)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,9)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Ý tưởng
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,10)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,10)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,10)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,10)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Dự án của thành viên
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
+                    </td>
+                    <!-- <td
+                      width="20%"
+                      style="
+                        background-color: #f1f3f5;
+                        border-bottom: 1px solid #d5d5d5;
+                      "
+                      align="right"
+                      nowrap="nowrap"
+                    ></td> -->
+                  </tr>
+                </tbody>
+              </table>
+              <script type="text/javascript" language="JavaScript" src="./menujs/main.js">
+              </script>
+              <div class="info-welcome" style="margin: 3px; text-indent: 5px">
+                <img class="img-welcome" src="./img/anhtheDinhHuuNguyen.jpg">
+                <font class="welcometext">Đinh Hữu Nguyện</font>
+                <span id="ctl00_m_menuLeft_lblUser" class="usernametext">|</span>
+                
+                <a
+                  id="ctl00_m_menuLeft_HyperLink1"
+                  class="logouttext"
+                  href="form-login.html"
+                  >Thoát</a
+                >&nbsp;
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="body-page" border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td valign="top">
+              <div
+                id="ctl00_m_validationSummary"
+                class="ValidatorSummary"
+                style="color: Red; display: none"
+              ></div>
+              <div style="width: 100%; margin-left: 2.5%;">
+                <script type="text/javascript">
+                  function CallingRollupFunction() {
+                    document
+                      .getElementById("ctl00_m_contentBody_hdnBtnRollUp")
+                      .click();
+                  }
+                </script>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <input
+                          type="submit"
+                          name="ctl00$m_contentBody$hdnBtnRollUp"
+                          value=""
+                          id="ctl00_m_contentBody_hdnBtnRollUp"
+                          style="display: none"
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <table>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr class="page-res">
+                              <td valign="top">
+                                <table
+                                  style="border-collapse: collapse"
+                                  border="0"
+                                >
+                                  <tbody>
+                                    <tr>
+                                      <td class="total-downsys">
+                                        <img src="./img/icon-system.png">                                        
+                                        <a class="down-sys"
+                                          title="Ấn vào đây để tải phần mềm làm bài kiểm tra"
+                                          
+                                          >
+                                          Phần mềm làm bài kiểm tra</a
+                                        >
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="school">
+                                        Học viện Công nghệ Bưu chính Viễn thông
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td class="role-school">Vai trò: Sinh viên</td>
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                <table>
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        align="left"
+                                                        valign="top"
+                                                      ></td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td class="major">Hệ thống thông tin 1</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table>
+                                          <tbody>
+                                            <tr>
+                                              <td class="role-school">Vai trò: Sinh viên</td>
+                                            </tr>
+                                            <tr>
+                                              <td>
+                                                <table>
+                                                  <tbody>
+                                                    <tr>
+                                                      <td
+                                                        align="left"
+                                                        valign="top"
+                                                      >
+                                                        <table
+                                                          style="
+                                                            border-collapse: collapse;
+                                                          "
+                                                          border="0"
+                                                        >
+                                                          <tbody>
+                                                            <tr>
+                                                              <td
+                                                                align="left"
+                                                                valign="top"
+                                                              >
+                                                                <table
+                                                                  style="
+                                                                    border-collapse: collapse;
+                                                                  "
+                                                                  border="0"
+                                                                >
+                                                                  <tbody>
+                                                                    <tr>
+                                                                      <td
+                                                                        align="left"
+                                                                        valign="top"
+                                                                      >
+                                                                        <table
+                                                                          style="
+                                                                            border-collapse: collapse;
+                                                                          "
+                                                                          border="0"
+                                                                        >
+                                                                          <tbody>
+                                                                            <tr>
+                                                                              <td class="total-funct">
+                                                                                <div class="class-subject">
+                                                                                  <img class="img-icon" src="./img/icon-class.png">
+                                                                                  <a 
+                                                                                  title="Bấm vào đây để xem lịch học"
+                                                                                  href="form-ViewClassSchedules.html"
+                                                                                  >Lớp
+                                                                                  học:
+                                                                                  Cơ
+                                                                                  sở
+                                                                                  dữ
+                                                                                  liệu:
+                                                                                  2023
+                                                                                  -
+                                                                                  2024
+                                                                                  -
+                                                                                  1
+                                                                                  -
+                                                                                  07</a>
+                                                                                </div>
+                                                                                  &nbsp;
+                                                                                  <div class="subject-content">
+                                                                                    <img class="img-icon" src="./img/icon-subcont.png">
+                                                                                    <a 
+                                                                                  title="Bấm vào đây để xem danh sách học liệu"
+                                                                                  href="form-ViewBookPublishers.html"
+                                                                                  >Nội
+                                                                                  dung</a
+                                                                                ></div>
+                                                                                &nbsp;
+                                                                                <div class="ques-ans">
+                                                                                  <img class="img-icon" src="./img/icon-quesans.png">
+                                                                                  <a 
+                                                                                  title="Bấm vào đây để trao đổi với Giảng viên"
+                                                                                  href="form-asks.html"
+                                                                                  >Hỏi
+                                                                                  đáp</a
+                                                                                ></div>
+                                                                              </td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                              <td class="seat-class">
+                                                                                <img class="img-icon" src="./img/icon-seat.png">
+                                                                                <a
+                                                                                  title="Bấm vào đây để thay đổi thông tin học viên"
+                                                                                  href="form-position.html"
+                                                                                  >Vị
+                                                                                  trí:
+                                                                                  7/8</a
+                                                                                >
+                                                                              </td>
+                                                                            </tr>
+                                                                            <tr><td class="notify" style="color:Red" align="left" valign="top">
+                                                                              <img class="img-icon" src="./img/icon-notify.png">
+                                                                              Thông báo: 13h00 ngày 25/11 kiểm tra giữa kỳ</td></tr>
+                                                                            <tr>
+                                                                              <td
+                                                                                align="left"
+                                                                                valign="top"
+                                                                              >
+                                                                                <table
+                                                                                  style="
+                                                                                    border-collapse: collapse;
+                                                                                  "
+                                                                                  border="0"
+                                                                                >
+                                                                                  <tbody>
+                                                                                    <tr>
+                                                                                      <td class="result-study">
+                                                                                        <img src="./img/icon-result.png">
+                                                                                        KẾT
+                                                                                        QUẢ
+                                                                                        HỌC
+                                                                                        TẬP:
+                                                                                      </td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                      <td
+                                                                                        align="left"
+                                                                                        valign="top"
+                                                                                      >
+                                                                                        <table
+                                                                                          border="1"
+                                                                                          style="
+                                                                                            border-collapse: collapse;
+                                                                                            border-color: Black;
+                                                                                          "
+                                                                                        >
+                                                                                          <tbody class="transcript">
+                                                                                            <tr>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                Chuyên
+                                                                                                cần<br />(10%)
+                                                                                              </td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                Bài
+                                                                                                tập<br />(20%)
+                                                                                              </td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                Kiểm
+                                                                                                tra
+                                                                                                giữa
+                                                                                                kỳ
+                                                                                                <br />(10%)
+                                                                                              </td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                Kiểm
+                                                                                                tra
+                                                                                                cuối
+                                                                                                kỳ<br />(60%)
+                                                                                              </td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                Điểm
+                                                                                                trung
+                                                                                                bình
+                                                                                              </td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                Ghi
+                                                                                                chú
+                                                                                              </td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                <a
+                                                                                                  title="Số lần điểm danh: 4 Số lần tham gia: 4 Tổng điểm: 40 Xem chi tiết tại đây"
+                                                                                                  href="form-viewAttendances.html"
+                                                                                                  >10</a
+                                                                                                >
+                                                                                              </td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                <a
+                                                                                                  title="Số bài kiểm tra: 1. Số lần học viên tham gia:1 Tổng điểm: 10.0. Xem chi tiết tại đây"
+                                                                                                  href="form-viewExamsUser.html"
+                                                                                                  >10</a
+                                                                                                >
+                                                                                              </td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                              <a
+                                                                                              title="Số bài kiểm tra: 1. Số lần học viên tham gia:1 Tổng điểm: 10.0. Xem chi tiết tại đây"
+                                                                                              href="form-viewExamsUser.html"
+                                                                                              >10</a
+                                                                                              ></td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                              <a
+                                                                                                  title="Số bài kiểm tra: 1. Số lần học viên tham gia:1 Tổng điểm: 10.0. Xem chi tiết tại đây"
+                                                                                                  href="form-viewExamsUser.html"
+                                                                                                  >10</a
+                                                                                                ></td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              >
+                                                                                                4.0
+                                                                                              </td>
+                                                                                              <td
+                                                                                                style="
+                                                                                                  text-align: center;
+                                                                                                  border-color: Black;
+                                                                                                "
+                                                                                                align="left"
+                                                                                                valign="top"
+                                                                                              ></td>
+                                                                                            </tr>
+                                                                                          </tbody>
+                                                                                        </table>
+                                                                                      </td>
+                                                                                    </tr>
+                                                                                  </tbody>
+                                                                                </table>
+                                                                              </td>
+                                                                            </tr>
+                                                                          </tbody>
+                                                                        </table>
+                                                                      </td>
+                                                                    </tr>
+                                                                  </tbody>
+                                                                </table>
+                                                              </td>
+                                                            </tr>
+                                                          </tbody>
+                                                        </table>
+                                                      </td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td valign="top">
+                                <table>
+                                  <tbody class="table-joined">
+                                    <tr>
+                                      <td class="joined-class"><img src="img/icon-ghim.png">
+                                        Các lớp đã tham gia:</td>
+                                    </tr>
+                                    <tr>
+                                      <td>
+                                        <table>
+                                          <tbody>
+                                            <tr class="total-item-class">
+                                              <td class="item-class">
+                                                <a
+                                                  title="Khóa học: INT1405 (Các hệ thống phân tán)(INT1405). Đơn vị: Hệ thống thông tin 1"
+                                                  href="form-ViewBookPublishersOld.html"
+                                                  >HPT 2021 K2 02</a
+                                                >
+                                              </td>
+                                              <td class="item-class">
+                                                <a
+                                                  title="Từ ngày: 13/02/2022 đến ngày: 13/08/2022"
+                                                  href="form-viewAttendancesOld.html"
+                                                  >INT1405</a
+                                                >
+                                              </td>
+                                              <td>
+                                                <a
+                                                  title="Bấm vào đây để xem kết quả học tập"
+                                                  href="/admin/pages/admin/elearn/ViewClassUsers.aspx?VaazBrno=4liQRp0O%2FpZMlJrKQMJj9g%3D%3D"
+                                                ></a>
+                                              </td>
+                                            </tr>
+                                          </tbody>
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <table
+        class="footer"
+        width="100%"
+        height="13"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <tbody>
+          <tr valign="top">
+            <td bgcolor="#d8dfec" width="*" style="height: 13px">
+              <img
+                id="ctl00_Image2"
+                src="../../../images/bottom_left_corner.gif"
+                style="height: 13px; width: 16px; border-width: 0px"
+              />
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+          <tr valign="top">
+            <td style="height: 76px">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr valign="middle" class="footerText">
+                    <td style="height: 14px">
+                      Hệ thống <font color="red"> Quản lý đào tạo </font> phiên
+                      bản 1.0, 08/2016. <br />
+                      Địa chỉ: Bộ môn Hệ thống thông tin, khoa CNTT 1 Học viện
+                      Công nghệ Bưu chính Viễn thông<br />
+                      Email:
+                      <a
+                        href="mailto:anhczvn@gmail.com"
+                        class="footerText"
+                        title="email anhczvn@gmail.com"
+                        >anhczvn@gmail.com</a
+                      ><br>
+                      Điện thoại:
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <!-- <tr valign="top">
+            <td style="height: 25px">&nbsp;</td>
+          </tr> -->
+        </tbody>
+      </table>
+
+      <script type="text/javascript">
+        //<![CDATA[
+        var Page_ValidationSummaries = new Array(
+          document.getElementById("ctl00_m_validationSummary")
+        );
+        //]]>
+      </script>
+    </form>
+  </body>
+</html>

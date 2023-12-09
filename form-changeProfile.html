@@ -1,0 +1,923 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head id="ctl00_Head1">
+    <title>Cập nhật thông tin cá nhân</title>
+    <meta name="description" content="AnNguyenJsc" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Expires" content="1800" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../../../Css/ddsmoothmenu.css"
+    />
+    <script type="text/javascript" src="/admin/Css/ddsmoothmenu.js"></script>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1" />
+    <meta name="CODE_LANGUAGE" content="C#" />
+    <meta name="vs_defaultClientScript" content="JavaScript" />
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery-1.8.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery-ui-1.8.23.custom.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/admin/JavaScript/jquery.msgBox.js"
+    ></script>
+    <link href="/css/bdc-style.css" rel="stylesheet" type="text/css" />
+    <link href="/admin/Css/jquery.msg.css" rel="stylesheet" type="text/css" />
+    <link href="/admin/Css/msgBoxLight.css" rel="stylesheet" type="text/css" />
+    <link
+      href="/admin/Css/jquery-ui-1.8.23.custom.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="/admin/Css/gridviewStyles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript" src="/menujs/JSCookMenu.js"></script>
+    <script type="text/javascript" src="/menujs/effect.js"></script>
+    <script type="text/javascript" src="/menujs/theme.js"></script>
+    <link type="text/css" rel="stylesheet" href="/menujs/default.css" />
+    <link type="text/css" rel="stylesheet" href="/menujs/theme.css" />
+    <link type="text/css" rel="stylesheet" href="style.css" />
+
+    <meta
+      name="vs_targetSchema"
+      content="http://schemas.microsoft.com/intellisense/ie5"
+    />
+  </head>
+  <body
+    class="pageBody"
+    marginheight="0"
+    marginwidth="0"
+    topmargin="0"
+    leftmargin="0"
+    onload="init()"
+  >
+    <form
+      name="aspnetForm"
+      method="post"
+      action="PrivatePage.aspx"
+      id="aspnetForm"
+      enctype="multipart/form-data"
+    >
+      <div>
+        <input
+          type="hidden"
+          name="__VIEWSTATE"
+          id="__VIEWSTATE"
+          value="/wEPDwULLTE2NDMzNzMyNTdkZE24e+A71a/CioIioJgtG3tqYsN2"
+        />
+      </div>
+
+      <div></div>
+      <div>
+        <div
+          id="loading"
+          style="
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top: 300px;
+            display: none;
+          "
+        >
+          <img alt="" src="/loading.gif" border="0" />
+        </div>
+      </div>
+
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tbody>
+          <tr>
+            <td width="100%">
+              <style type="text/css">
+                .welcometext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                }
+                .usernametext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                  color: Blue;
+                }
+                .logouttext {
+                  font-family: Arial, Tahoma, Times New Roman;
+                  font-size: 10pt;
+                  color: Red;
+                  text-decoration: none;
+                }
+              </style>
+              <table
+                style="border-collapse: collapse"
+                cellspacing="0"
+                cellpadding="0"
+                width="100%"
+                border="0"
+              >
+                <tbody>
+                  <tr>
+                    <td align="left">
+                      <div id="myMenuID">
+                        <table
+                          summary="main menu"
+                          class="ThemeDefaultMenu"
+                          cellspacing="0"
+                        >
+                          <tbody>
+                            <tr>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID1',0,0)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID1',0,0)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID1',0,0)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID1',0,0)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Hệ thống</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,null,0,3)"
+                                onmousedown="cmItemMouseDown (this,1,null,0,3)"
+                                onmouseout="cmItemMouseOut (this,1,null,0,3)"
+                                onmouseup="cmItemMouseUp (this,1,null,0,3)"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID2',0,4)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID2',0,4)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID2',0,4)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID2',0,4)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Học viện mạng</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,null,0,7)"
+                                onmousedown="cmItemMouseDown (this,1,null,0,7)"
+                                onmouseout="cmItemMouseOut (this,1,null,0,7)"
+                                onmouseup="cmItemMouseUp (this,1,null,0,7)"
+                              >
+                                &nbsp;
+                              </td>
+                              <td
+                                class="ThemeDefaultMainItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,1,'cmSubMenuID3',0,8)"
+                                onmousedown="cmItemMouseDown (this,1,'cmSubMenuID3',0,8)"
+                                onmouseout="cmItemMouseOut (this,1,'cmSubMenuID3',0,8)"
+                                onmouseup="cmItemMouseUp (this,1,'cmSubMenuID3',0,8)"
+                              >
+                                <span class="ThemeDefaultMainFolderLeft"
+                                  >&nbsp;</span
+                                ><span class="ThemeDefaultMainFolderText"
+                                  >Nghiên cứu Phát triển</span
+                                ><span class="ThemeDefaultMainFolderRight"
+                                  >&nbsp;</span
+                                >
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID1"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID1Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,1)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,1)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,1)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,1)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Đổi mật khẩu
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,2)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,2)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,2)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,2)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Cập nhật thông tin cá nhân
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID2"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID2Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,5)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,5)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,5)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,5)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Trang cá nhân
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,6)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,6)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,6)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,6)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Xem học viên các lớp học
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div
+                          class="ThemeDefaultSubMenu"
+                          id="cmSubMenuID3"
+                          style="
+                            z-index: 1000;
+                            position: absolute;
+                            top: 0px;
+                            left: 0px;
+                            visibility: hidden;
+                          "
+                        >
+                          <table
+                            summary="sub menu"
+                            id="cmSubMenuID3Table"
+                            cellspacing="0"
+                            class="ThemeDefaultSubMenuTable"
+                          >
+                            <tbody>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,9)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,9)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,9)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,9)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Ý tưởng
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                              <tr
+                                class="ThemeDefaultMenuItem"
+                                onmouseover="cmItemMouseOverOpenSub (this,0,null,0,10)"
+                                onmousedown="cmItemMouseDown (this,0,null,0,10)"
+                                onmouseout="cmItemMouseOut (this,0,null,0,10)"
+                                onmouseup="cmItemMouseUp (this,0,null,0,10)"
+                              >
+                                <td class="ThemeDefaultMenuItemLeft">
+                                  <img src="/img/event_icon.png" />
+                                </td>
+                                <td class="ThemeDefaultMenuItemText">
+                                  Dự án của thành viên
+                                </td>
+                                <td class="ThemeDefaultMenuItemRight">
+                                  <img
+                                    alt=""
+                                    src="/sms_web/admin/menujs/blank.png"
+                                  />
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <a
+                          href="javascript:void(0);"
+                          class="icon"
+                          onclick="myFunction()"
+                        >
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
+                    </td>
+                    <!-- <td
+                      width="20%"
+                      style="
+                        background-color: #f1f3f5;
+                        border-bottom: 1px solid #d5d5d5;
+                      "
+                      align="right"
+                      nowrap="nowrap"
+                    ></td> -->
+                  </tr>
+                </tbody>
+              </table>
+              <script type="text/javascript" language="JavaScript" src="./menujs/main.js">
+              </script>
+              <div class="info-welcome" style="margin: 3px; text-indent: 5px">
+                <img class="img-welcome" src="./img/anhtheDinhHuuNguyen.jpg" />
+                <font class="welcometext">Đinh Hữu Nguyện</font>
+                <span id="ctl00_m_menuLeft_lblUser" class="usernametext"
+                  >|</span
+                >
+
+                <a
+                  id="ctl00_m_menuLeft_HyperLink1"
+                  class="logouttext"
+                  href="form-login.html"
+                  >Thoát</a
+                >&nbsp;
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+      <table border="0" width="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+          <tr>
+            <td valign="top">
+              <div
+                id="ctl00_m_validationSummary"
+                class="ValidatorSummary"
+                style="color: Red; display: none"
+                bis_skin_checked="1"
+              ></div>
+              <div style="width: 100%" bis_skin_checked="1">
+                <script
+                  type="text/javascript"
+                  language="JavaScript"
+                  src="../../../JavaScript/date-picker.js"
+                ></script>
+                <script
+                  type="text/javascript"
+                  language="JavaScript"
+                  src="../../../JavaScript/chk_date.js"
+                ></script>
+                <script type="text/javascript" language="javascript">
+                  function openWindow(url) {
+                    window.open(url, "mywindow");
+                  }
+                </script>
+                <table
+                  border="0"
+                  id="table1"
+                  align="center"
+                  cellpadding="2"
+                  cellspacing="1"
+                >
+                  <tbody>
+                    <tr>
+                      <td>
+                        <font class="titleForm"
+                          >CẬP NHẬT THÔNG TIN CÁ NHÂN</font
+                        >
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <table>
+                          <tbody>
+                            <tr valign="middle">
+                              <td>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <td style="height: 26px" valign="middle">
+                                        Tên truy nhập
+                                      </td>
+                                      <td style="height: 26px">
+                                        <input
+                                          name="ctl00$m_contentBody$txtUsername"
+                                          type="text"
+                                          value="dinhhuunguyen"
+                                          maxlength="255"
+                                          readonly="readonly"
+                                          id="ctl00_m_contentBody_txtUsername"
+                                          disabled="disabled"
+                                          style="width: 136px"
+                                        />&nbsp;
+                                      </td>
+                                    </tr>
+                                    <tr valign="middle">
+                                      <td style="height: 26px" valign="middle">
+                                        Số điện thoại
+                                      </td>
+                                      <td style="height: 26px">
+                                        <input
+                                          name="ctl00$m_contentBody$txtMobileNumber"
+                                          type="text"
+                                          value="0387405503"
+                                          maxlength="50"
+                                          id="ctl00_m_contentBody_txtMobileNumber"
+                                          style="width: 136px"
+                                        />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="height: 26px" valign="middle">
+                                        Thư điện tử
+                                      </td>
+                                      <td style="height: 26px">
+                                        <input
+                                          name="ctl00$m_contentBody$txtEmail"
+                                          type="text"
+                                          value="huunguyendinh15@gmail.com"
+                                          maxlength="50"
+                                          id="ctl00_m_contentBody_txtEmail"
+                                          style="width: 233px"
+                                        />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td style="height: 26px" valign="middle">
+                                        Họ và tên
+                                      </td>
+                                      <td style="height: 26px">
+                                        <input
+                                          name="ctl00$m_contentBody$txtFullname"
+                                          type="text"
+                                          value="Đinh Hữu Nguyện"
+                                          maxlength="255"
+                                          id="ctl00_m_contentBody_txtFullname"
+                                          style="width: 233px"
+                                        />
+                                        <span
+                                          id="ctl00_m_contentBody_RequiredFullname"
+                                          style="color: Red; visibility: hidden"
+                                          >Nhập đầy đủ họ và tên
+                                        </span>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <td></td>
+                                      <td
+                                        style="width: 100px; height: 133px"
+                                        align="center"
+                                        valign="top"
+                                      >
+                                        <img
+                                          alt=""
+                                          border="0"
+                                          src="./img/anhtheDinhHuuNguyen.jpg"
+                                          width="100px"
+                                          style="width: 100px"
+                                          height="133px"
+                                          title="Đinh Hữu Nguyện"
+                                        />
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td
+                                        style="width: 100px"
+                                        class="text_content"
+                                      >
+                                        Ảnh
+                                      </td>
+                                      <td
+                                        style="height: 26px"
+                                        class="text_content"
+                                      >
+                                        <input
+                                          type="file"
+                                          name="ctl00$m_contentBody$uploadImageFile"
+                                          id="ctl00_m_contentBody_uploadImageFile"
+                                          onchange="GetImage()"
+                                          style="width: 200px"
+                                        />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <table>
+                                  <tbody>
+                                    <tr valign="middle">
+                                      <td style="height: 26px" valign="middle">
+                                        Giới tính
+                                      </td>
+                                      <td style="height: 26px">
+                                        <select
+                                          name="ctl00$m_contentBody$cboGenders"
+                                          id="ctl00_m_contentBody_cboGenders"
+                                        >
+                                          <option selected="selected" value="1">
+                                            Nam
+                                          </option>
+                                          <option value="2">Nữ</option>
+                                          <option value="255">Khác</option>
+                                        </select>
+                                      </td>
+                                    </tr>
+                                    <tr valign="middle">
+                                      <td style="height: 26px" valign="middle">
+                                        Ngày sinh
+                                      </td>
+                                      <td>
+                                        <input
+                                          name="ctl00$m_contentBody$txtBirthDate"
+                                          type="text"
+                                          value="15/01/2000"
+                                          id="ctl00_m_contentBody_txtBirthDate"
+                                          style="width: 90px"
+                                        />
+                                        <img
+                                          alt=""
+                                          border="0"
+                                          src="./img/cal.gif"
+                                          width="20"
+                                          height="20"
+                                          onclick="javascript:show_calendar('aspnetForm.ctl00$m_contentBody$txtBirthDate');"
+                                          onmouseover="window.status='';return true;"
+                                          onmouseout="window.status='';return true;"
+                                        /><i>(DD/MM/YYYY)</i>
+                                      </td>
+                                    </tr>
+                                    <tr valign="middle">
+                                      <td style="height: 26px" valign="middle">
+                                        Nơi sinh
+                                      </td>
+                                      <td style="height: 26px">
+                                        <select
+                                          name="ctl00$m_contentBody$cboPlaces"
+                                          id="ctl00_m_contentBody_cboPlaces"
+                                          style="width: 150px"
+                                        >
+                                          <option value="0">Không có</option>
+                                          <option selected="selected" value="1">
+                                            Việt Nam
+                                          </option>
+                                          <option value="2">Bắc Việt</option>
+                                          <option value="3">Nam Việt</option>
+                                          <option value="4">Trung việt</option>
+                                          <option value="5">Hà Nội</option>
+                                          <option value="6">
+                                            Tp. Hồ Chí Minh
+                                          </option>
+                                          <option value="7">Đà Nẵng</option>
+                                          <option value="8">Cần Thơ</option>
+                                          <option value="9">Hải Phòng</option>
+                                          <option value="10">Ba Đình</option>
+                                          <option value="11">Hoàn Kiếm</option>
+                                          <option value="12">Đống Đa</option>
+                                          <option value="13">
+                                            Hai Bà Trưng
+                                          </option>
+                                          <option value="14">Cầu Giấy</option>
+                                          <option value="15">Thanh Xuân</option>
+                                          <option value="16">Tây Hồ</option>
+                                          <option value="17">Hoàng Mai</option>
+                                          <option value="18">Long Biên</option>
+                                          <option value="19">Hà Đông</option>
+                                          <option value="20">
+                                            Bắc Từ Liêm
+                                          </option>
+                                          <option value="21">
+                                            Nam Từ Liêm
+                                          </option>
+                                          <option value="22">Sơn Tây</option>
+                                          <option value="23">Ba Vì</option>
+                                          <option value="24">Chương Mỹ</option>
+                                          <option value="25">Đan Phượng</option>
+                                          <option value="26">Đông Anh</option>
+                                          <option value="27">Gia Lâm</option>
+                                          <option value="28">Hoài Đức</option>
+                                          <option value="29">Mê Linh</option>
+                                          <option value="30">Mỹ Đức</option>
+                                          <option value="31">Phú Xuyên</option>
+                                          <option value="32">Phúc Thọ</option>
+                                          <option value="33">Quốc Oai</option>
+                                          <option value="34">Sóc Sơn</option>
+                                          <option value="35">Thạch Thất</option>
+                                          <option value="36">Thanh Oai</option>
+                                          <option value="37">Thanh Trì</option>
+                                          <option value="38">Thường Tín</option>
+                                          <option value="39">Ứng Hòa</option>
+                                          <option value="40">Quận 1</option>
+                                          <option value="41">Thủ Đức</option>
+                                          <option value="42">Quận 12</option>
+                                          <option value="43">XuanPhuong</option>
+                                          <option value="44">TayMo</option>
+                                          <option value="45">Lào</option>
+                                        </select>
+                                        <input
+                                          name="ctl00$m_contentBody$txtBirthAddress"
+                                          type="text"
+                                          maxlength="255"
+                                          size="20"
+                                          id="ctl00_m_contentBody_txtBirthAddress"
+                                        />
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                              <td>
+                                <table>
+                                  <tbody>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmUserNationalitiesByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Quốc tịch
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmUserContactTypesByUserId.aspx?UserId=4370');"
+                                          title="Thông tin liên hệ: Thư điện tử, số điện thoại..."
+                                          bis_skin_checked="1"
+                                        >
+                                          huunguyendinh15@gmail.com
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmUserDegreesByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Bằng cấp
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmUserOrgansByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Học viện Công nghệ Bưu chính Viễn
+                                          thông
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmUserProfessionsByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Nghề nghiệp
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmRelatedUsersByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Quan hệ xã hội
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmUserFavouritesByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Sở thích
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmUserTargetGroupsByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Mục tiêu
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('AdmUserSkillGroupsByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Kỹ năng
+                                        </a>
+                                      </td>
+                                    </tr>
+                                    <tr>
+                                      <td valign="top">
+                                        <a
+                                          style="text-decoration: none"
+                                          href="javascript:openWindow('../Wms/AdmUserProjectsByUserId.aspx?UserId=4370');"
+                                          bis_skin_checked="1"
+                                        >
+                                          Dự án
+                                        </a>
+                                      </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                    <tr valign="middle">
+                      <td style="height: 26px">
+                        <input
+                          type="button"
+                          name="ctl00$m_contentBody$btnUpdate"
+                          value="Cập nhật"
+                          onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$m_contentBody$btnUpdate", "", true, "", "", false, false))'
+                          id="ctl00_m_contentBody_btnUpdate"
+                        />&nbsp;&nbsp;
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+
+
+      <table
+        class="footer"
+        width="100%"
+        height="13"
+        border="0"
+        cellpadding="0"
+        cellspacing="0"
+      >
+        <tbody>
+          <tr valign="top">
+            <td bgcolor="#d8dfec" width="*" style="height: 13px">
+              <img
+                id="ctl00_Image2"
+                src="../../../images/bottom_left_corner.gif"
+                style="height: 13px; width: 16px; border-width: 0px"
+              />
+            </td>
+          </tr>
+          <tr valign="top">
+            <td>&nbsp;</td>
+          </tr>
+          <tr valign="top">
+            <td style="height: 76px">
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tbody>
+                  <tr valign="middle" class="footerText">
+                    <td style="height: 14px">
+                      Hệ thống <font color="red"> Quản lý đào tạo </font> phiên
+                      bản 1.0, 08/2016. <br />
+                      Địa chỉ: Bộ môn Hệ thống thông tin, khoa CNTT 1 Học viện
+                      Công nghệ Bưu chính Viễn thông<br />
+                      Email:
+                      <a
+                        href="mailto:anhczvn@gmail.com"
+                        class="footerText"
+                        title="email anhczvn@gmail.com"
+                        >anhczvn@gmail.com</a
+                      ><br />
+                      Điện thoại:
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <!-- <tr valign="top">
+            <td style="height: 25px">&nbsp;</td>
+          </tr> -->
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

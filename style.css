@@ -1,0 +1,603 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+/*---------------------- Trang ca nhan -------------------------------*/
+#myMenuID {
+    height: 40px;
+    width: 100% !important;
+    background-color: #08B2F0;
+    position: fixed;
+}
+
+.ThemeDefaultMainItem {
+    padding-top: 10px;
+    padding-bottom: 5px;
+} 
+
+.ThemeDefaultMainFolderText {
+    font-size: 19px;
+    color: #fff;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.ThemeDefaultMainItemHover {
+    background-color: #a9dff3;
+    border: 0px;
+    box-shadow: 0px 0px 8px 1px #888888;
+}
+.ThemeDefaultMainItemHover .ThemeDefaultMainFolderText {
+    color: #000000;
+}
+.ThemeDefaultMenuItemText {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ThemeDefaultMenuItem {
+    background-color: #a9dff3;
+    border: none;
+}
+.ThemeDefaultMenuItemHover {
+    background-color: #08B2F0;
+}
+.ThemeDefaultMenuItemHover .ThemeDefaultMenuItemText {
+    color: #fff;
+    font-weight: 600;
+}
+
+
+.body-page {
+   margin-top: 90px;
+
+}
+.img-welcome {
+    width: auto;
+    height: 50px;
+    border-radius: 5px;
+}
+.info-welcome {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 30px !important;
+    position: fixed;
+    top: 40px;
+    right: 0;
+    background-color: #fff;
+}
+.welcometext, .img-welcome, .usernametext, .logouttext {
+    align-self: center;
+}
+.welcometext {
+    font-size: 15px !important;
+    font-weight: 400;
+    padding: 17px 0;
+    margin-right: 20px;
+    font-weight: 600;
+}
+.usernametext {
+    display: none;
+}
+.logouttext {
+    border: 1px solid #6a6a6a;
+    padding: 10px 20px 10px 10px;
+    font-weight: 600;
+    font-size: 15px !important;
+    background-color: #fee2e2;
+    border-radius: 5px;
+    color: red !important;
+}
+.logouttext:hover {
+    box-shadow: 0px 0px 8px 1px #bcebf2;
+    color: #fff !important;
+    background-color: #08B2F0;
+    text-decoration: none;
+}
+.total-downsys {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 7px;
+}
+.total-downsys img {
+    width: auto;
+    height: 40px;
+}
+.down-sys {
+    font-size: 15px;
+    text-decoration: none;
+    border: 1px solid #6a6a6a;
+    box-shadow: 0px 0px 8px 1px #888888;
+    padding: 7px;
+    background-color: #bef5d3;
+    border-radius: 5px;
+}
+.down-sys:hover {
+    color: #fff;
+    font-weight: 500;
+    background-color: #2aa06b;
+    text-decoration: none;
+}
+
+.total-funct {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
+.school, .role-school, .major, .class-subject a, .subject-content a, .ques-ans a, .seat-class a {
+    font-size: 15px;
+}
+
+.class-subject a, .subject-content a, .ques-ans a, .seat-class a {
+    text-decoration: none;
+    border: 1px solid #6a6a6a;
+    padding: 5px 8px;
+    box-shadow: 0px 0px 8px 1px #888888;
+    background-color: #bef5d3;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.class-subject a:hover, .subject-content a:hover, .ques-ans a:hover, .seat-class a:hover {
+    background-color: #2aa06b;
+    color: #fff;
+    text-decoration: none;
+}
+.img-icon {
+    width: auto;
+    height: 30px;
+    margin-right: 5px;
+}
+.class-subject, .subject-content, .ques-ans, .seat-class, .joined-class, .result-study, .notify {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.seat-class {
+    margin: 15px 0;
+}
+
+.notify {
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.joined-class {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+
+.joined-class img, .result-study img {
+    width: auto;
+    height: 35px;
+}
+.total-item-class {
+    display: flex;
+    flex-direction: column;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+.item-class a {
+    text-decoration: none;
+    border: 1px solid #6a6a6a;
+    padding: 8px 10px;
+    box-shadow: 0px 0px 8px 1px #888888;
+    border-radius: 3px;
+    background-color: #bef5d3;
+    font-size: 14px;
+    color: #000000;
+}
+.item-class {
+    margin: 15px 0;
+}
+.item-class a:hover {
+    background-color: #2aa06b;
+    color: #fff;
+}
+
+.result-study {
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+.transcript tr:first-child td {
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 15px;
+    background-color: #a9dff3;
+}
+.transcript tr:nth-child(2) td {
+    font-size: 15px;
+    padding: 25px 15px;
+}
+.transcript tr:nth-child(2) td a {
+    text-decoration: none;
+    border: 1px solid #6a6a6a;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #c0c0c0;
+}
+.transcript tr:nth-child(2) td a:hover {
+    background-color: #363535;
+    color: #fff;
+    font-weight: 500;
+}
+.transcript tr:nth-child(2) td:nth-child(5) {
+    font-weight: 600;
+    font-size: 16px;
+    color: #000000;
+}
+.transcript tr:nth-child(2) td:last-child {
+    color: #001e4a;
+}
+
+.footer {
+    text-align: center;
+    /* position: relative;
+    bottom: 0%; */
+}
+.footerText td {
+    color: #000000;
+    font-size: 13px;
+}
+.footerText a {
+    font-size: 14px;
+    color: #003687;
+    font-weight: 600;
+    text-decoration: none;
+}
+.footerText a:hover {
+    text-decoration: underline;
+}
+
+
+/* -------------------- CSS form login ------------------------ */
+.forumline {
+    border-radius: 15px;
+    border: 1px #333333 solid;
+    box-shadow: 0px 0px 9px #5e5e5e;
+    background-color: #a9dff3;
+    font-weight: 600;
+}
+#m_login_RememberMe {
+    margin-left: 20px;
+    width: 25px;
+    height: 18px;
+}
+.remember-pass {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.remember-text {
+    font-size: smaller;
+}
+#m_login_Password, #m_login_UserName {
+    margin-left: 10px;
+    
+}
+#m_login_LoginButton {
+    color: #002a68;
+    background-color: #fffbff;
+    border-color: #989898;
+    border-width: 1px;
+    border-style: Solid;
+    font-family: Verdana;
+    font-size: 1em;
+    padding: 8px 5px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+#m_login_LoginButton:hover {
+    color: #ffffff;
+    box-shadow: 0px 0px 9px #5e5e5e;
+    border-color: #333333;
+    background-color: #2aa06b;
+}
+
+
+/* -------------------- CSS form Đổi mật khẩu, Cập nhật thông tin ------------------------ */
+.titleForm {
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #f6a5a5;
+    padding: 10px 15px;
+    border: 1px solid #5e5e5e;
+    border-radius: 1px;
+    box-shadow: 0px 0px 9px #fda8a8;
+}
+#table1 {
+    margin-top: 120px;
+}
+td, span {
+    font-size: 14px;
+}
+#ctl00_m_contentBody_btnUpdate, 
+#ctl00_m_contentBody_btnSearch, 
+#ctl00_m_contentBody_btnExportHtml,
+#ctl00_m_contentBody_btnRegister,
+#ctl00_m_contentBody_btnSend,
+#ctl00_m_contentBody_btnBack {
+    background-color: #a9dff3;
+    color: #000000;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #888888;
+}
+#ctl00_m_contentBody_btnUpdate:hover, 
+#ctl00_m_contentBody_btnSearch:hover, 
+#ctl00_m_contentBody_btnExportHtml:hover,
+#ctl00_m_contentBody_btnRegister:hover,
+#ctl00_m_contentBody_btnSend:hover,
+#ctl00_m_contentBody_btnBack:hover {
+    color: #ffffff;
+    border-color: #333333;
+    box-shadow: 0px 0px 9px #90aeb3;
+    background-color: #08B2F0;
+}
+input {
+    margin-left: 10px;
+}
+select {
+    padding: 3px;
+    font-weight: 600;
+}
+#ctl00_m_contentBody_txtBirthDate {
+    margin: 10px 0;
+}
+option {
+    background-color: #d8d7d7;
+    color: #000000;
+    font-weight: 600;
+}
+input {
+    font-weight: 600;
+}
+/* -------------------- CSS form Xem học viên các lớp ------------------------ */
+#ctl00_m_contentBody_cboSearchClasses {
+    margin-top: 110px;
+    margin-left: 10px;
+    font-size: 16px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px #90aeb3;
+}
+.class-title {
+    font-size: 18px;
+}
+.class-list {
+    margin-left: 50px;
+}
+
+/*--------------------- CSS form ý tưởng, Dự án thành viên, Vị trí, lịch học, tài liệu, lớp học, điểm -------------*/
+.objective-main, .project-main {
+    margin-top: 110px;
+}
+#ctl00_m_contentBody_m_grid, #ctl00_m_contentBody_btnSearch {
+    margin-top: 20px;
+}
+.objective-main .titleForm {
+    font-size: 18px;
+    margin-left: 30px;
+}
+#ctl00_m_contentBody_m_grid_ctl02_cmdEdit, 
+#ctl00_m_contentBody_m_grid_ctl02_cmdDelete, 
+#ctl00_m_contentBody_m_grid_ctl03_cmdInsert {
+    background-color: #f3eea9;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #888888;
+    text-decoration: none;
+}
+#ctl00_m_contentBody_m_grid_ctl02_cmdEdit:hover, 
+#ctl00_m_contentBody_m_grid_ctl02_cmdDelete:hover,
+#ctl00_m_contentBody_m_grid_ctl03_cmdInsert:hover {
+    color: #ffffff;
+    border-color: #333333;
+    box-shadow: 0px 0px 9px #90aeb3;
+    background-color: #524c00;
+}
+
+
+
+.action-objectives, .action-project {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+#ctl00_m_contentBody_lblInfo,
+#ctl00_m_contentBody_lblInfor {
+    color: #000000 !important;
+    font-size: 16px !important;
+    margin-left: 15px;
+    background-color: #64ffb9;
+    font-weight: 600;
+    padding: 8px;
+    border: 1px solid #5e5e5e;
+    border-radius: 5px;
+    box-shadow: 0px 0px 9px #c0fda8;
+}
+
+
+.position-main {
+    margin-top: 30px;
+}
+#ctl00_m_contentBody_btnRegister {
+    margin-top: 20px;
+}
+.asks-main {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.asks-main table,
+.viewBook-main table {
+    margin-top: 25px;
+}
+#ctl00_m_contentBody_LblAskHead,
+#ctl00_m_contentBody_LblAskContents {
+    font-size: 16px;
+    font-weight: 600;
+}
+#ctl00_m_contentBody_btnSend {
+    margin-top: 15px;
+}
+.viewBook-main {
+    margin-top: 110px;
+    margin-left: 50px;
+}
+.document-book td {
+    font-weight: 600;
+}
+.document-book td a {
+    text-decoration: none;
+    padding-left: 10px;
+    background-color: #a9dff3;
+    color: #000000;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    border: 2px solid #888888;
+}
+.document-book td:first-child {
+    font-size: 18px !important;
+    padding-right: 15px;
+}
+.document-book td a:hover {
+    color: #ffffff;
+    border-color: #333333;
+    box-shadow: 0px 0px 9px #90aeb3;
+    background-color: #08B2F0;
+}
+.document-main {
+    display: flex;
+    flex-direction: column;
+}
+.document-main .item {
+    margin: 20px 0;
+}
+
+.bookPart-main {
+    margin-top: 110px;
+    margin-left: 30px;
+}
+.bookPart-main2 {
+    margin-top: 20px;
+}
+.print-main {
+    margin: 15px 0;
+}
+.print-doc a {
+    background-color: #f3eea9;
+    color: #000000;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #888888;
+    text-decoration: none;
+}
+.print-doc a:hover {
+    color: #ffffff;
+    border-color: #333333;
+    box-shadow: 0px 0px 9px #90aeb3;
+    background-color: #524c00;
+}
+.bookPart-item a {
+    color: #002a68;
+    font-weight: 600;
+}
+.bookPart-item a:hover {
+    text-decoration: none;
+    color: red;
+}
+.bookPart-item tbody tr td:first-child {
+    font-weight: 600;
+    color: #002a68;
+    font-size: 16px;
+}
+.schedules-main {
+    margin-top: 110px;
+    margin-left: 30px;
+}
+#admin_pages_admin_elearn_viewclassschedules_aspx {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.schedules-print {
+    margin-left: 15px;
+}
+.attendances-main,
+.exams-main {
+    margin-top: 110px;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+.attendances-main table tbody {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.attendances-main table tbody tr {
+    display: flex;
+    flex-direction: column;
+}
+.attendances-main table tbody tr td,
+.exams-table table tbody tr td {
+    padding: 8px;
+}
+.exams-item {
+    margin-bottom: 15px;
+}
+.exams-title {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px 0 5px 0;
+}
+.exams-result {
+    color: red !important;
+    font-weight: 600;
+}
+.exams-result:hover {
+    color: #000000 !important;
+    text-decoration: none;
+}
+.execute-main {
+    padding: 20px;
+}
+.execute-main b {
+    font-size: 20px;
+}
+/* <-------------- Responsive ------------------> */
+@media only screen and (max-width: 1040px) {
+    .page-res {
+        display: flex;
+        flex-direction: column;
+    }
+    .joined-class {
+        padding-left: 3%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    
+}
